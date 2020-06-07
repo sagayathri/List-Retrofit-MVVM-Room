@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SpectrumTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="logo">Logo</string>
+    <string name="search">Search</string>
+    <string name="sort">Sort</string>
+    <string name="about">About</string>
+    <string name="name">Name</string>
+    <string name="members">Members</string>
+    <string name="website">Website</string>
+</resources>

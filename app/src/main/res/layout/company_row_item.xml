@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        style="@style/Wrap">
+        <ImageView
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height"
+            android:id="@+id/imgCompanyLogo"
+            android:contentDescription="@string/logo" />
+
+        <LinearLayout
+            android:layout_toEndOf="@+id/imgCompanyLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_marginEnd="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/name"
+                    style="@style/TextAppearance.AppCompat.Medium" />
+                <TextView
+                    android:id="@+id/tvWebsite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="@string/website"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <Button
+                    android:layout_width="@dimen/image_width_small"
+                    android:layout_height="@dimen/image_height_small"
+                    android:id="@+id/btnFavorite"
+                    android:background="@drawable/not_favorite"
+                    android:layout_marginBottom="@dimen/margin_small"
+                    android:layout_gravity="center"/>
+
+                <Button
+                    android:layout_width="@dimen/image_width_small"
+                    android:layout_height="@dimen/image_height_small"
+                    android:id="@+id/btnFollow"
+                    android:background="@drawable/not_following"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
